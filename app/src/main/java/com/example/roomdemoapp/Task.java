@@ -1,10 +1,13 @@
 package com.example.roomdemoapp;
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.PrimaryKey;
+
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
+@Entity
 public class Task implements Serializable {
 
     @PrimaryKey(autoGenerate = true)

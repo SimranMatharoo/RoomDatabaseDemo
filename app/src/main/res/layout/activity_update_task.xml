@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateTaskActivity"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="UPDATE TASK"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+        <EditText
+            android:id="@+id/editTextTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TASK?"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textColorHint="#FFF"
+            android:layout_marginTop="60dp"/>
+
+        <EditText
+            android:id="@+id/editTextDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DESCRIPTION..."
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textColorHint="#FFF"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextFinishBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FINISH BY?"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textColorHint="#FFF"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxFinished"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark as finished"
+            android:textColor="#fff"
+            android:fontFamily="monospace"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_update"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/orange"
+            android:text="Update"
+            android:textSize="20dp"
+            android:fontFamily="monospace"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_delete"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/orange"
+            android:text="Delete"
+            android:textSize="20dp"
+            android:fontFamily="monospace"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

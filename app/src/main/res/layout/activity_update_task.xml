@@ -13,6 +13,10 @@
         android:layout_centerVertical="true"
         android:orientation="vertical"
         android:padding="16dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/update"/>
 
         <TextView
             android:layout_width="match_parent"
